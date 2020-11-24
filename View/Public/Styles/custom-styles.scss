@@ -1,0 +1,48 @@
+//basics?
+.page-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto 1/8fr;
+}
+
+//Navbar
+.navbar-container{
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom: 1px black;
+  position: sticky;
+  top:0;
+  margin: auto;
+  
+}
+.logo-img{
+  grid-column: 1;
+  margin: auto;
+  width: auto;
+  height: 75%;
+}
+.h2-nav{
+  padding: 50px 15% 50px 15%;
+  font-weight: bold;
+  color: #A11B21;
+  cursor: pointer;
+}
+.h3-nav{
+  padding: 25% 15% 25% 15%;
+  color: gray;
+  cursor: pointer;
+}
+.shopping-cart-img{ 
+  margin: auto;
+  cursor: pointer;
+}
+
+
+
+.footer-button{
+  grid-row: 5 ;
+  position: sticky;
+  bottom: 10px;
+}

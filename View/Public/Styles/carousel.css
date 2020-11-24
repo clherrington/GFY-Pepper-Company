@@ -1,3 +1,10 @@
+.h3-c {
+  color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -10,9 +17,9 @@ body {
 }
 
 .wrapper {
-  background: linear-gradient(60deg, #420285, #08BDBD);
-  height: 100%;
-  width: 100%;
+  background: linear-gradient(60deg, #fff, black);
+  height: auto;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,12 +176,6 @@ body {
     opacity: 0;
     visibility: visible;
   }
-  100% {
-    -webkit-transform: translateX(-100%) scale(0.5);
-            transform: translateX(-100%) scale(0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 
 @keyframes carousel-animate-vertical {
@@ -211,11 +212,5 @@ body {
     opacity: 0;
     visibility: visible;
   }
-  100% {
-    -webkit-transform: translateX(-100%) scale(0.5);
-            transform: translateX(-100%) scale(0.5);
-    opacity: 0;
-    visibility: hidden;
-  }
 }
-/*# sourceMappingURL=custom-styles.css.map */
+/*# sourceMappingURL=carousel.css.map */

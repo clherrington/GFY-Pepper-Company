@@ -1,0 +1,59 @@
+.page-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto 1/8fr;
+      grid-template-rows: auto auto auto 1/8fr;
+}
+
+.navbar-container {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  border-bottom: 1px black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin: auto;
+}
+
+.logo-img {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  margin: auto;
+  width: auto;
+  height: 75%;
+}
+
+.h2-nav {
+  padding: 50px 15% 50px 15%;
+  font-weight: bold;
+  color: #A11B21;
+  cursor: pointer;
+}
+
+.h3-nav {
+  padding: 25% 15% 25% 15%;
+  color: gray;
+  cursor: pointer;
+}
+
+.shopping-cart-img {
+  margin: auto;
+  cursor: pointer;
+}
+
+.footer-button {
+  -ms-grid-row: 5;
+  grid-row: 5;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 10px;
+}
+/*# sourceMappingURL=custom-styles.css.map */

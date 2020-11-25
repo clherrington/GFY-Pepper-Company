@@ -2,7 +2,7 @@
 .page-grid{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto 1/8fr;
+  grid-template-rows: auto auto auto auto;
 }
 
 //Navbar
@@ -24,13 +24,13 @@
   height: 75%;
 }
 .h2-nav{
-  padding: 50px 15% 50px 15%;
+  margin: auto;
   font-weight: bold;
   color: #A11B21;
   cursor: pointer;
 }
 .h3-nav{
-  padding: 25% 15% 25% 15%;
+  margin: auto;
   color: gray;
   cursor: pointer;
 }
@@ -43,6 +43,9 @@
 
 .footer-button{
   grid-row: 5 ;
+  margin: auto;
   position: sticky;
   bottom: 10px;
+  height: 50px;
+  width: 160px;
 }

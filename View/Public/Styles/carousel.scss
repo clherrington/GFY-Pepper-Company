@@ -25,7 +25,7 @@
   
   
   $animation-timing: 27s;
-  $carousel-items: 9;
+  $carousel-items: 5;
   $animation-delay-fraction: $animation-timing / $carousel-items;
   $animation-steps-fraction: 100 / $carousel-items;
   $slide-change-timing: 3; // percentage of total animation cycle
@@ -35,7 +35,7 @@
   }
 
   body {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Sitka Heading', sans-serif;
     font-weight: 400;
     height: 100vh;
   }
@@ -85,7 +85,10 @@
   //     animation-delay: calc(#{$animation-delay-fraction} * #{$i});
   //   }
   // }
-
+  .carousel-img{
+    height: 75%;
+    width: auto;
+  }
   .carousel__item-head {
     border-radius: 50%;
     background-color: #d7f7fc;

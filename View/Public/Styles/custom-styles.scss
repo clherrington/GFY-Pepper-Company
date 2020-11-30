@@ -9,12 +9,12 @@
 .navbar-container{
   grid-row: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr auto 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   border-bottom: 1px black;
   position: sticky;
   top:0;
-  margin: auto;
+  //margin: auto;
   
 }
 .logo-img{
@@ -24,6 +24,7 @@
   height: 75%;
 }
 .h2-nav{
+  grid-column: 4;
   margin: auto;
   font-weight: bold;
   color: #A11B21;
@@ -39,7 +40,21 @@
   cursor: pointer;
 }
 
-
+.contest-entry{
+  grid-column: 1;
+  grid-row: 2/-1;
+  width: 100%;
+  height: 100%;
+}
+.contest-entry > div{
+  width: 75%;
+  margin: auto;
+  padding: 5%;
+  color: white;
+  background-color: grey;
+  position: sticky;
+  top: 250px;
+}
 
 .footer-button{
   grid-row: 5 ;

@@ -5,14 +5,11 @@ class Contest {
         $this->conn = $db;
     }
 
-    public function checkEntryExists($data)
+    public function checkEntry($phone)
     {
         
-        //vars
-        $phone = $data['PhoneNumber'];
-        //vars
 
-        $query1 = "SELECT * from ContestIdeas WHERE PhoneNumber = {$phone}";
+        $query = "SELECT * from ContestIdeas WHERE PhoneNumber = {$phone}";
 
         //Prepares query statement
         $stmt = $this->conn->prepare($query);
@@ -20,7 +17,7 @@ class Contest {
         //execute query
         $stmt->execute();
 
-        if(count($stmt) > 0)
+        if($stmt->rowCount() > 0)
         {
             return true;
         }
@@ -38,25 +35,18 @@ class Contest {
     {
 
         //vars
-        $name = $data['Name'];
-        $desc = $data['Description'];
-        $phone = $data['PhoneNumber'];
+        $name = $data['name'];
+        $desc = $data['desc'];
+        $phone = $data['phone'];
         //vars
 
-        $query1 = "SELECT * from ContestIdeas WHERE PhoneNumber = {$phone}";
-
-        //Prepares query statement
+        $query = "INSERT into ContestIdeas
+                    (Name, Description, PhoneNumber)
+                   Values ( '$name', '$desc', '$phone');";
+        
         $stmt = $this->conn->prepare($query);
 
-        //execute query
         $stmt->execute();
-
-        //return values
-        return $stmt;
-
-        if
-
-        $query2 = "INSERT into ContestIdeas"
 
     }
 }

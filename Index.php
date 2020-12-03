@@ -16,7 +16,6 @@
 <!-- I really don't know -->
 <?php
 include './View/Public/carousel.php'
-
 ?>
 
 

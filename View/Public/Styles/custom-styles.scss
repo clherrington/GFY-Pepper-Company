@@ -1,3 +1,8 @@
+
+.no-line-link{
+  text-decoration: none !important;
+}
+
 //basics?
 .page-grid{
   display: grid;
@@ -29,6 +34,7 @@
   font-weight: bold;
   color: #A11B21;
   cursor: pointer;
+  
   
 }
 .h3-nav{

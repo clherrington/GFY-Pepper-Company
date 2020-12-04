@@ -18,7 +18,8 @@
 include './View/Public/carousel.php'
 ?>
 
-
+<alert>I couldn't get the product search to work</alert>
+<button onclick='href="./contest-page.php"'class= 'btn'>Contest</button>
 
 
 
